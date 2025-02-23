@@ -6,7 +6,7 @@ type CoreConceptProps = {
 
 function CoreConcept({ image, title, description }: CoreConceptProps) {
   return (
-    <li>
+    <li data-testid="core-concept">
       <img src={image} alt={title} />
       <h3>{title}</h3>
       <p>{description}</p>

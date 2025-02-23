@@ -11,7 +11,7 @@ function TabButton({ children, onSelect, isSelected }: TabButtonProps) {
   }
 
   return (
-    <li>
+    <li data-testid="tab-button">
       <button className={isSelected ? "active" : ""} onClick={handleClick}>
         {children}
       </button>

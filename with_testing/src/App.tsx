@@ -63,7 +63,7 @@ function App() {
           ) : (
             <div id="tab-content">
               <h3>{EXAMPLES[selectedTopic].title}</h3>
-              <p>{EXAMPLES[selectedTopic].description}</p>
+              <p data-testid="selected-topic-description">{EXAMPLES[selectedTopic].description}</p>
               <pre>
                 <code>{EXAMPLES[selectedTopic].code}</code>
               </pre>
